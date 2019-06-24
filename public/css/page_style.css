@@ -1,0 +1,171 @@
+.page-header {
+    height: 250px;
+    position: relative;
+    
+}
+
+.page-header-background {
+    background: url("../img/bgs/page-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.page-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(12, 12, 12, 0.8);
+}
+
+.page-header .page-title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+}
+
+.page-header .page-title h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 5em;
+    color: #e7bf6d;
+}
+
+.page-content h2 {
+    border-bottom: 4px solid #e7bf6d;
+    padding-bottom: 5px;
+    display: table;
+}
+
+.page-img {
+    border-radius: 5px;
+}
+
+.menu-container {
+    height: 500px;
+    box-shadow: 2px 2px 20px -10px black;
+    background: #3f3f3f;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+
+.ma-list {
+    
+    
+    box-shadow: 2px 2px 40px -20px black;
+    overflow: hidden;
+}
+.ma-item {
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: 1px solid #585858;
+    color: white;
+    transition: all .2s ease-out;
+}
+.ma-item:hover {
+    background: #585858;
+    cursor: pointer;
+    color: white;
+    
+}
+.ma-item.active {
+    background: #e04237;
+    color: white;
+}
+.ma-dishes {
+    height: 500px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.menu-header {
+    padding: 5px 15px;
+    color: #e7bf6d;
+    font-weight: bold;
+    font-size: 2em;
+    border-bottom: 1px solid #585858;
+}
+
+.menu-header .material-icons {
+    font-size: .8em;
+}
+.menu-header .material-icons:hover {
+    cursor: pointer;
+}
+
+
+.entry-enter-active, .entry-leave-active {
+    transition: all .5s;
+  }
+  .entry-enter, .entry-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+.ma-dish {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    background: white;
+    margin: 5px;
+    border-radius: 5px;
+    height: 400px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 2px 2px 10px -7px grey;
+    position: relative;
+}
+.ma-info {
+    padding: 10px;
+}
+.ma-dish-title {
+    color: #e7bf6d;
+    font-weight: bold;
+    height: 50px;
+}
+.ma-dish-image {
+    height: 150px;
+    background-image: url('https://images.pexels.com/photos/2116092/pexels-photo-2116092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ma-price {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e04237;
+    padding: 2px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.ma-entry-enter-active {
+    transition: all .3s ease-out;
+    transition-delay: .5s;
+}
+.ma-entry-leave-active {
+    transition: all .3s ease-out;
+    
+}
+  .ma-entry-enter, .ma-entry-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+    transform: translateY(20px);
+  }
