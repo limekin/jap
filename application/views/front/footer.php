@@ -28,6 +28,10 @@
         </div>
     </section>
     <!-- Footer section. -->
+
+    <script>
+        window.base_url = '<?php echo base_url(); ?>';
+    </script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -94,6 +98,6 @@
     <script>
         AOS.init();
     </script>
-    <script src='js/vue_apps/menu.j'></script>
+    <script src='<?php echo base_url() ;?>public/js/vue_apps/menu.js'></script>
 </body>
 </html>

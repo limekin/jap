@@ -9,6 +9,25 @@ class Admin extends CI_Controller {
 	}
 
 	public function login() {
+
+		if($_SERVER['REQUEST_METHOD'] == 'POST') {
+			return $this->login_submit();
+		}
+		$this->load->view('admin/login');
+	}
+
+	public function login_submit() {
+
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+
+		if($username == 'admin' && $password == 'admin@#123') {
+			$this->session->set_userdata('admin');
+			redirect(base_url() . 'admin');
+			return;
+		}
+
+		$this->session->set_flashdata('error', 'Incorrect username or password.');
 		$this->load->view('admin/login');
 	}
 

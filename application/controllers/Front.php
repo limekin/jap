@@ -8,6 +8,10 @@ class Front extends CI_Controller {
 		$this->view('front/index');
 	}
 
+	public function menu() {
+		$this->view('front/menu');
+	}
+
 	private function view($page) {
 		$this->load->view("front/header");
 		$this->load->view($page);

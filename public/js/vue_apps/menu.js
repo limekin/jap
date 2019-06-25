@@ -38,6 +38,13 @@ if(document.getElementById('menu-page-app')) {
         created() {
             //this.selectedMain = this.main[0]
             //this.selectedSub = this.main[0].sub
+            $.get(base_url + 'Ajax/categories', function( data ) {
+                this.main = data
+            }.bind(this));
+            $.get(base_url + 'Ajax/menu', function( data ) {
+                console.log(data);
+            
+            });
         },
 
         computed: {
